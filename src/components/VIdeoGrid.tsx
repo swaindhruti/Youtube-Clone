@@ -60,10 +60,10 @@ const VideoCardData = [{
     channelImage: "thumbnail_1.jpg",
     channel: "Dhrutinandan Swain",
     views: "1.3M views | 1 day ago"
-}];
+}].reverse();
 
 export const VideoGrid = () => {
-    return <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+    return <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 m-2 mt-3">
         {VideoCardData.map((video) => <div>
             <VideoCard
             title={video.title}
